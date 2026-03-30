@@ -28,11 +28,11 @@ def quick_sort_music(playlist):
             else:
                 middle.append(song)
                 
-    # Combine sub-lists using recursion
+    # Combine sub lists using recursion
     return quick_sort_music(left) + middle + quick_sort_music(right)
 
 def validate_and_sort(songs):
-    # Precondition check: verify data exists and energy is 0-100
+    # Verify data exists and energy is 0-100
     for song in songs:
         if not song.get('genre') or song.get('energy') is None:
             return "Error: Missing song data."
@@ -46,13 +46,13 @@ def validate_and_sort(songs):
 
 def ui_wrapper(raw_input):
     try:
-        # Convert text input into a Python list of dictionaries
+        # Convert text input into Python list of dictionaries
         songs = ast.literal_eval(raw_input)
         
         # Run validation and sorting
         result = validate_and_sort(songs)
         
-        # If result is an error string, return it; otherwise, format the list
+        # If result is an error string, return it, if not format the list
         if isinstance(result, str):
             return result
         
