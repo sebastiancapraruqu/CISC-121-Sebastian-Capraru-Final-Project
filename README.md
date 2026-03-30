@@ -25,7 +25,7 @@ Abstraction:
 I chose to show the user the most important visual details, like which song is the current pivot and which two songs are being swapped, so they can see the "vibe" changing in real time. On the other hand, I am getting rid of the complicated background recursive calls that the computer uses to keep track of the sub lists with. These things are left out because they would make the screen look too cluttered and confusing for a person to watch.
 
 Algorithm Design:
-The process starts when the user interacts with a button on the app to sort their music by genre or energy. The app then takes that input request and runs my custom quick sort algortihm which move the songs around on the screen with smooth and visually pleasing animations. Once the sorting is finished, the app shows the final, perfectly ordered playlist ready for the user to listen too.
+The process starts when the user interacts with a button on the app to sort their music by genre or energy. The app then takes the input request and runs my custom quick sort algortihm which move the songs around on the screen. Once the sorting is finished, the app shows the final, perfectly ordered playlist ready for the user to listen too.
 
 Data Structures:
-For this project, I will be using a list of dictionaries to store the song data. Each dictionary will hold a song's information as a string for the title and genre, and an integer for the energy score, which makes it very easy to access and compare the values during the quick sort process.
+For this project, I will be using a list of dictionaries to store the song data. Each dictionary will hold a song's information as a string for the title and genre, and an integer for the energy score, which makes it very easy to find and compare the values during the quick sort process.
