@@ -1,0 +1,40 @@
+def quick_sort_music(playlist):
+    # Base case: A list of 0 or 1 elements is already sorted
+    if len(playlist) <= 1:
+        return playlist
+    
+    # Pick middle element as the pivot
+    pivot = playlist[len(playlist) // 2]
+    
+    left = []
+    middle = []
+    right = []
+    
+    for song in playlist:
+        # Sort by Genre (Alphabetical)
+        if song['genre'] < pivot['genre']:
+            left.append(song)
+        elif song['genre'] > pivot['genre']:
+            right.append(song)
+        else:
+            # If genres match, sort by Energy (Highest to Lowest)
+            if song['energy'] > pivot['energy']:
+                left.append(song)
+            elif song['energy'] < pivot['energy']:
+                right.append(song)
+            else:
+                middle.append(song)
+                
+    # Combine sub lists using recursion
+    return quick_sort_music(left) + middle + quick_sort_music(right)
+
+def validate_and_sort(songs):
+    # Verify data exists and energy is 0-100
+    for song in songs:
+        if not song.get('genre') or song.get('energy') is None:
+            return "Error: Missing song data."
+        
+        if not (0 <= song['energy'] <= 100):
+            return "Error: Invalid energy score."
+
+    return quick_sort_music(songs)
