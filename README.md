@@ -27,11 +27,8 @@ I chose to show the user the most important visual details, like which song is t
 Algorithm Design:
 The process starts when the user interacts with a button on the app to sort their music by genre or energy. The app then takes the input request and runs my custom quick sort algortihm which move the songs around on the screen. Once the sorting is finished, the app shows the final, perfectly ordered playlist ready for the user to listen too.
 
-
-
-
-
-
+Data Structures:
+For this project, I will be using a list of dictionaries to store the song data. Each dictionary will hold a song's information as a string for the title and genre, and an integer for the energy score, which makes it very easy to find and compare the values during the quick sort process.
 
 
 
@@ -49,5 +46,3 @@ The process starts when the user interacts with a button on the app to sort thei
 
 
 ## AI USAGE: USED AI TO HELP WITH CODING ESPECIALLY THE GRADIO IMPLEMENTATION, THE QUICK SORT CODE NOT SO MUCH AS WE LEARNED THAT IN CLASS!
-Data Structures:
-For this project, I will be using a list of dictionaries to store the song data. Each dictionary will hold a song's information as a string for the title and genre, and an integer for the energy score, which makes it very easy to find and compare the values during the quick sort process.
