@@ -28,21 +28,17 @@ Algorithm Design:
 The process starts when the user interacts with a button on the app to sort their music by genre or energy. The app then takes the input request and runs my custom quick sort algortihm which move the songs around on the screen. Once the sorting is finished, the app shows the final, perfectly ordered playlist ready for the user to listen too.
 
 Data Structures:
-For this project, I will be using a list of dictionaries to store the song data. Each dictionary will hold a song's information as a string for the title and genre, and an integer for the energy score, which makes it very easy to find and compare the values during the quick sort process.
+I will be using a list of dictionaries to store the song data. Each dictionary will hold a song's information as a string for the title and genre, and an integer for the energy score, which makes it very easy to find and compare the values during the quick sort process.
 
 
+## Testing and Edge Cases:
 
+I tested the algorithm using a messy and large variety list of songs with different genres and energy levels to make sure the Quick Sort correctly grouped genres alphabetically and sorted energy from highest to lowest. I also tested edge cases like entering an empty list or a song with a 105 energy score, to make sure my logic noticed, found and fixed the errors instead of crashing the app.
 
+## Hugging Face Link: https://huggingface.co/spaces/sc1x/playlist-vibe-builder/tree/main
+## How to run the app:
+To run this app on locally on your own computer, first open the terminal or vs code and type pip install -r requirements.txt to download the needed libraries. Once that is done just run the code given in hugging face or github on app.py and click the local URL link that appears to open the Playlist Vibe Builder in your browser.
 
-
-
-
-
-
-
-
-
-
-
+## I provided my flow chart screenshot where I proided the code running as well in the Visual file in main!!
 
 ## AI USAGE: USED AI TO HELP WITH CODING ESPECIALLY THE GRADIO IMPLEMENTATION, THE QUICK SORT CODE NOT SO MUCH AS WE LEARNED THAT IN CLASS! I ALSO USED AI FOR THE SAMPLE IMPUT YOU SEE IN THE VISUAL.
