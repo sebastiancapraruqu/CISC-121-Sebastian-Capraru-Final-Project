@@ -39,6 +39,6 @@ I tested the algorithm using a messy and large variety list of songs with differ
 ## How to run the app:
 To run this app on locally on your own computer, first open the terminal or vs code and type pip install -r requirements.txt to download the needed libraries. Once that is done just run the code given in hugging face or github on app.py and click the local URL link that appears to open the Playlist Vibe Builder in your browser.
 
-## I provided my flow chart screenshot where I proided the code running as well in the Visual file in main!!
+## I provided my flow chart screenshot where I posted the code running as well in the Visual file in main!!
 
 ## AI USAGE: USED AI TO HELP WITH CODING ESPECIALLY THE GRADIO IMPLEMENTATION, THE QUICK SORT CODE NOT SO MUCH AS WE LEARNED THAT IN CLASS! I ALSO USED AI FOR THE SAMPLE IMPUT YOU SEE IN THE VISUAL. I ALSO USED AI TO HELP REFINE/SIMPLIFY AND DEBUG MY CODE!
