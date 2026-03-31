@@ -32,7 +32,7 @@ def quick_sort_music(playlist):
     return quick_sort_music(left) + middle + quick_sort_music(right)
 
 def validate_and_sort(songs):
-    # Verify data exists and energy is 0-100
+    # Make sure data exists and energy is 0 to 100 (not more or less)
     for song in songs:
         if not song.get('genre') or song.get('energy') is None:
             return "Error: Missing song data."
