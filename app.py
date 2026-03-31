@@ -69,7 +69,7 @@ interface = gr.Interface(
     fn=ui_wrapper, 
     inputs=gr.Textbox(lines=5, label="Paste Song Data Here", placeholder="[{'title': 'Song 1', 'genre': 'Rock', 'energy': 80}, ...]"),
     outputs=gr.Textbox(label="Sorted Vibe Results"),
-    title="🎵 Playlist Vibe Builder",
+    title="Playlist Vibe Builder",
     description="Sorts your music by Genre (A-Z) and then by Energy (High-Low) using Quick Sort."
 )
 
