@@ -64,7 +64,7 @@ def ui_wrapper(raw_input):
     except Exception:
         return "Input Error: Ensure you use the correct list format."
 
-# Setup the interface
+# Gradio Code (AI HELPED A LOT)
 interface = gr.Interface(
     fn=ui_wrapper, 
     inputs=gr.Textbox(lines=5, label="Paste Song Data Here", placeholder="[{'title': 'Song 1', 'genre': 'Rock', 'energy': 80}, ...]"),
