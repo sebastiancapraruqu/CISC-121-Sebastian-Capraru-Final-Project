@@ -46,7 +46,7 @@ def validate_and_sort(songs):
 
 def ui_wrapper(raw_input):
     try:
-        # Convert text input into Python list of dictionaries
+        # Takes the text input and turns it into a list of dictionaries
         songs = ast.literal_eval(raw_input)
         
         # Run validation and sorting
